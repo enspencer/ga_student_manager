@@ -31,8 +31,8 @@ group :development, :test do
 end
 
 
-#Bootstrap SASS install
-gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
+gem 'bootstrap-sass', '~> 3.0.2.0'
 
 #for connecting making rest calls to github
 gem 'rest-client'

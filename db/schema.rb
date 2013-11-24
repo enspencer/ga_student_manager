@@ -11,7 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20131122003821) do
 
   # These are extensions that must be enabled in order to support this database
@@ -82,7 +81,7 @@ ActiveRecord::Schema.define(version: 20131122003821) do
     t.string   "last_name"
     t.boolean  "is_admin",                default: false
     t.string   "telephone"
-    t.string   "email"
+    t.string   "email",                   default: "",    null: false
     t.text     "street_address"
     t.string   "city"
     t.string   "state"
